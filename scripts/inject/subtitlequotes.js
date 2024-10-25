@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "Deployed on Firebase AKA web.app by SC0TT!",
         "if you read this you need to lose your IQ immediately.",
         "The best uprising game website, mainly for CFISD.",
-        "Potato! - SC0TT"
+        "Potato! - SC0TT",
+        "Submit a custom splash to the widgetbot server!"
     ];
 
     const subtitleElement = document.querySelector('.subtitle');
