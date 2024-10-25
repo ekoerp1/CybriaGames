@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "if you read this you need to lose your IQ immediately.",
         "The best uprising game website, mainly for CFISD.",
         "Potato! - SC0TT",
-        "Submit a custom splash to the widgetbot server!"
+        "Submit a custom splash to the widgetbot server!",
+        "Fanny Fact: CybriaGames was published on my birthday"
     ];
 
     const subtitleElement = document.querySelector('.subtitle');
