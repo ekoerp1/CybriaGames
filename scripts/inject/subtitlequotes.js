@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const quotes = [
-        "Greater than any school, even you Labay.",
+        "Better than any school, even you Labay.",
         "thank you X-88 for saving my boredom - some random student ",
         "SCOTT HOW ARE YOU STILL ALIVE?! - blooket haters",
         "Thank you for checking out our website!!",
