@@ -13,7 +13,7 @@ document.write(`
             <p class="footer-title">Community</p>
             <a class="footer-a" href="https://twitter.com/cybriatech_" target="_blank">Twitter (X)</a>
             <a class="footer-a" href="https://tiktok.com/@cybriatech" target="_blank">TikTok</a>
-            <a class="footer-a" href="https://discord.gg/zhsmmNNtJT" target="_blank">Discord</a>
+            <a class="footer-a" href="https://discord.gg/c3AmKk67vt" target="_blank">Discord</a>
         </div>
         <div class="footer-4">
             <p class="footer-title">Sources</p>
