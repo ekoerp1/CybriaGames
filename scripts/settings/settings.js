@@ -1,13 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     selectonload();
-    panics();
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
-            e.preventDefault();
-            window.location.href = localStorage.getItem('panicloc');
-        }
-    });
 });
 
 let deftitle = document.title;
@@ -247,13 +239,11 @@ function initpanic() {
     }
 }
 
-function panics() {
-    document.addEventListener("keydown", (event) => {
-        if (event.key === panickey) {
-            window.location.href = panicloc;
-        }
-    });
-}
+document.addEventListener("keydown", (event) => {
+    if (event.key === panickey) {
+        window.location.href = panicloc;
+    }
+});
 
 
 function rev() {
