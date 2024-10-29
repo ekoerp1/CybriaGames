@@ -248,12 +248,9 @@ function initpanic() {
 }
 
 function panics() {
-    document.addEventListener('keydown', (e) => {
-        if (panickey.toLowerCase()) {
-            e.preventDefault();
+    document.addEventListener("keydown", (event) => {
+        if (event.key === panickey) {
             window.location.href = panicloc;
-        } else {
-          console.log('Error');
         }
     });
 }
