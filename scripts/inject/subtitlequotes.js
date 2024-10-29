@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "The best uprising game website, mainly for CFISD.",
         "Potato! - SC0TT",
         "Submit a custom splash to the widgetbot server!",
-        "Fanny Fact: CybriaGames was published on my birthday"
+        "Fanny Fact: CybriaGames was published on my birthday",
+        "Fun Faact: CybriaGames was supposed to be an extentsion of Tam's Game Hub"
     ];
 
     const subtitleElement = document.querySelector('.subtitle');
