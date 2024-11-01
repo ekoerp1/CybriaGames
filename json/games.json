@@ -479,5 +479,11 @@
     "logo": "/images/games/unfair-mario.png",
     "creator": "unknown",
     "source": "/games/unfair-mario"
+  },
+  {
+    "title": "BitLife",
+    "logo": "/images/games/bitlife.png",
+    "creator": "Candywriter",
+    "source": "/games/bitlife"
   }
 ]
