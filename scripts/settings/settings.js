@@ -386,5 +386,9 @@ function switchcors() {
 }
 
 function selectonload() {
-    document.getElementById('cors').value = localStorage.getItem('corsvalue') || 'workers.dev';
+    if (!localStorage.getItem('corsvalue')) {
+        document.getElementById('cors').value = 'workers.dev';
+    } else {
+        document.getElementById('cors').value = localStorage.getItem('corsvalue'); 
+    }
 }
