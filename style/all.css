@@ -978,10 +978,7 @@ body {
 
 /* Fonts */
 
-  body.default,
-  body.default .sidebar-btn,
-  body.default #header,
-  body.default #footer {
+  .default {
    font-family: 'Roboto', sans-serif;
   }
 
