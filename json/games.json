@@ -485,5 +485,11 @@
     "logo": "/images/games/bitlife.png",
     "creator": "Candywriter",
     "source": "/games/bitlife"
+  },
+  {
+    "title": "Dante",
+    "logo": "/images/games/dante.png",
+    "creator": "Salvatore Prevetti",
+    "source": "/games/dante"
   }
 ]
