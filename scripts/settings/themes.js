@@ -21,28 +21,25 @@ function applyls() {
 }
 
 function changefont(font) {
-    const selective = [document.body, document.getElementById('header'), document.getElementById('footer')];
-    const logo = document.querySelector('.header-img');
-    const homelogo = document.querySelector('.title-img');
-
-    selective.forEach(sel => sel.dataset.font = font);
+    const body = document.body;
 
     var removefont = function() {
-        selective.forEach(sel => sel.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt'));
+        body.forEach(sel => sel.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt'));
     };
 
     removefont();
 
     if (font === 'Nerko One') {
-        selective.forEach(sel => sel.classList.add('nerko-one'));
+        body.forEach(sel => sel.classList.add('nerko-one'));
     } else if (font === 'Playpen Sans') {
-        selective.forEach(sel => sel.classList.add('playpen-sans'));
+        body.forEach(sel => sel.classList.add('playpen-sans'));
     } else if (font === 'Oswald') {
-        selective.forEach(sel => sel.classList.add('oswald'));
+        body.forEach(sel => sel.classList.add('oswald'));
     } else if (font === 'Prompt') {
-        selective.forEach(sel => sel.classList.add('prompt'));
+        body.forEach(sel => sel.classList.add('prompt'));
     } else if (font === 'Default Font') {
-        selective.forEach(sel => sel.classList.add('default'));
+        removefont();
+        body.forEach(sel => sel.classList.add('default'));
     }
 
 
