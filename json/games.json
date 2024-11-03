@@ -497,5 +497,11 @@
     "logo": "/images/games/death-run-3d.png",
     "creator": "kevin.wang",
     "source": "/games/death-run-3d"
+  },
+  {
+    "title": "Dragon Ball Devolution",
+    "logo": "/images/games/dragon-ball-devolution.png",
+    "creator": "Txori",
+    "source": "/games/dragon-ball-devolution"
   }
 ]
