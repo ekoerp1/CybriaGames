@@ -491,5 +491,11 @@
     "logo": "/images/games/dante.png",
     "creator": "Salvatore Prevetti",
     "source": "/games/dante"
+  },
+  {
+    "title": "Death Run 3D",
+    "logo": "/images/games/death-run-3d.png",
+    "creator": "kevin.wang",
+    "source": "/games/death-run-3d"
   }
 ]
