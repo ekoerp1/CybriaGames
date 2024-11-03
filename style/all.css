@@ -982,7 +982,11 @@ body {
   body.nerko-one,
   body.nerko-one .sidebar-btn,
   body.nerko-one #header,
-  body.nerko-one #footer {
+  body.nerko-one #footer,
+  body.nerko-one .int-desc,
+  body.nerko-one .subtitle,
+  body.nerko-one #homebtn,
+  body.nerko-one .search {
    font-family: "Nerko One", cursive;
    font-weight: 400;
    font-style: normal;
