@@ -978,6 +978,13 @@ body {
 
 /* Fonts */
 
+  body.default,
+  body.default .sidebar-btn,
+  body.default #header,
+  body.default #footer {
+   font-family: 'Roboto', sans-serif;
+  }
+
   body.nerko-one,
   body.nerko-one .sidebar-btn,
   body.nerko-one #header,
