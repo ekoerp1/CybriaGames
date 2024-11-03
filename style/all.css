@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #1C2128;
     align-items: center;
     color: #fff;
@@ -977,26 +978,6 @@ body {
   }
 
 /* Fonts */
-
-  .default {
-   font-family: 'Roboto', sans-serif;
-  }
-
-  .nerko-one {
-   font-family: 'Nerko One', cursive;
-  }
-
-   .playpen-sans {
-    font-family: 'Playpen Sans', sans-serif;
-  }
-
-   .oswald {
-    font-family: 'Oswald', sans-serif;
-  }
-
-   .prompt {
-    font-family: 'Prompt', sans-serif;
-  }
 
 
 
