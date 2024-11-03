@@ -43,6 +43,7 @@ function changefont(font) {
         selective.forEach(sel => sel.classList.add('prompt'));
     } else if (font === 'Default Font') {
         removefont();
+        selective.style.fontFamily = "'Roboto', sans-serif";
     }
 
 
