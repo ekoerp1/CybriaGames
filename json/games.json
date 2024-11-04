@@ -503,5 +503,11 @@
     "logo": "/images/games/dragonballdevolution.png",
     "creator": "Txori",
     "source": "/games/dragon-ball-devolution"
+  },
+  {
+    "title": "Doodle Jump",
+    "logo": "/images/games/doodle-jump.png",
+    "creator": "Lima Sky",
+    "source": "/games/doodle-jump"
   }
 ]
