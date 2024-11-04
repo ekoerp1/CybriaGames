@@ -509,5 +509,11 @@
     "logo": "/images/games/doodle-jump.png",
     "creator": "Lima Sky",
     "source": "/games/doodle-jump"
+  },
+  {
+    "title": "Cookie Clicker",
+    "logo": "/images/games/cookie-clicker.png",
+    "creator": "Julien &quot;Orteil&quot; Thiennot",
+    "source": "/games/cookie-clicker"
   }
 ]
