@@ -1,5 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
     selectonload();
+
+    function savepanics() {
+        const panickey = document.getElementById("panickey-input").value;
+        const panicloc = document.getElementById("panicloc-input").value;
+
+        localStorage.setItem("panickey", panickey);
+        localStorage.setItem("panicloc", panicloc);
+    }
+
+    function getpanickey() {
+        const savedpanickey = localStorage.getItem("panickey") || '`';
+        const savedpanicloc = localStorage.getItem("panicloc") || 'https://www.google.com';
+
+        if (savedpanickey && savedpanickey === document.activeElement.value) {
+            window.location.href = savedpanicloc;
+        }
+    }
+
+    document.getElementById("panickey-input").addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            savepanics();
+        }
+    });
+
+    document.getElementById("panicloc-input").addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            savepanics();
+        }
+    });
+
+    document.getElementById("panickey-input").addEventListener("blur", getpanickey);
 });
 
 let deftitle = document.title;
@@ -205,46 +238,6 @@ titleinput.addEventListener('keypress', function(event) {
         }
     }
 });
-
-const defaultkey = '`';
-const defaultloc = 'https://google.com';
-
-let panickey = localStorage.getItem('panickey') || defaultkey;
-let panicloc = localStorage.getItem('panicloc') || defaultloc;
-
-function initpanic() {
-    const keyinput = document.getElementById('panickey-input');
-    const locinput = document.getElementById('panicloc-input');
-    
-    if (keyinput) {
-        keyinput.value = panickey;
-        keyinput.addEventListener('input', (e) => {
-            const value = e.target.value;
-            if (value.length === 1) {
-                panickey = value;
-                localStorage.setItem('panickey', panickey);
-            }
-        });
-    }
-
-    if (locinput) {
-        locinput.value = panicloc;
-        locinput.addEventListener('input', (e) => {
-            const value = e.target.value;
-            if (value) {
-                panicloc = value;
-                localStorage.setItem('panicloc', panicloc);
-            }
-        });
-    }
-}
-
-document.addEventListener("keydown", (event) => {
-    if (event.key === panickey) {
-        window.location.href = panicloc;
-    }
-});
-
 
 function rev() {
     const locinput = document.getElementById('panicloc-input');
