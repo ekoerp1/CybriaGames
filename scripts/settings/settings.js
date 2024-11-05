@@ -1,38 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     selectonload();
-
-    function savepanics() {
-        const panickey = document.getElementById("panickey-input").value;
-        const panicloc = document.getElementById("panicloc-input").value;
-
-        localStorage.setItem("panickey", panickey);
-        localStorage.setItem("panicloc", panicloc);
-    }
-
-    function getpanickey() {
-        const savedpanickey = localStorage.getItem("panickey") || '`';
-        const savedpanicloc = localStorage.getItem("panicloc") || 'https://www.google.com';
-
-        if (savedpanickey && savedpanickey === document.activeElement.value) {
-            window.location.href = savedpanicloc;
-        }
-    }
-
-    document.getElementById("panickey-input").addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            savepanics();
-        }
-    });
-
-    document.getElementById("panicloc-input").addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            savepanics();
-        }
-    });
-
-    document.getElementById("panickey-input").addEventListener("blur", getpanickey);
 });
 
 let deftitle = document.title;
