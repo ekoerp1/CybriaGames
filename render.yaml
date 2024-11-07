@@ -2,6 +2,6 @@ services:
   - type: web
     name: cygames
     env: node
-    buildCommand: jekyll build
+    buildCommand: build
     startCommand:
     plan: free
