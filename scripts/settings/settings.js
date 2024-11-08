@@ -321,7 +321,6 @@ const urls = {
     'workers.dev': 'https://cors.timmytamle569.workers.dev/',
     'onrender.com': 'https://kors.onrender.com/',
     'duckdns.org': 'https://tcors.duckdns.org/',
-    'hopto.org': 'https://tcors.hopto.org/',
     'mywire.org': 'https://tcors.mywire.org/',
     'loseyourip.com': 'https://tcors.loseyourip.com/',
     'ddnsfree.com': 'https://tcors.ddnsfree.com/',
