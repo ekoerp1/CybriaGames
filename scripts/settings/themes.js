@@ -5,46 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const theme = this.value;
         settheme(theme);
     });
-
-    document.getElementById("font").addEventListener("change", function() {
-        const font = this.value;
-        changefont(font);
-    });
 });
 
 function applyls() {
     const savedtheme = localStorage.getItem('theme') || 'Default';
-    const savedfont = localStorage.getItem('font') || 'Default Font';
     
     settheme(savedtheme);
-    changefont(savedfont);
-}
-
-function changefont(font) {
-    const body = document.body;
-
-    var removefont = function() {
-        body.forEach(sel => sel.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt'));
-    };
-
-    removefont();
-
-    if (font === 'Nerko One') {
-        body.forEach(sel => sel.classList.add('nerko-one'));
-    } else if (font === 'Playpen Sans') {
-        body.forEach(sel => sel.classList.add('playpen-sans'));
-    } else if (font === 'Oswald') {
-        body.forEach(sel => sel.classList.add('oswald'));
-    } else if (font === 'Prompt') {
-        body.forEach(sel => sel.classList.add('prompt'));
-    } else if (font === 'Default Font') {
-        removefont();
-        body.forEach(sel => sel.classList.add('default'));
-    }
-
-
-    localStorage.setItem('font', font);
-    document.getElementById("font").value = font;
 }
 
 function settheme(theme) {
