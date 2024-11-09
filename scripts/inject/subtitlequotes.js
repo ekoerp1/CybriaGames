@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
         "Suggest a new game to add on the widgetbot server or https://discord.gg/c3AmKk67vt",
         "Submit a custom splash to the widgetbot server!",
         "Fanny Fact: CybriaGames was published on my birthday",
-        "Fun Faact: CybriaGames was supposed to be an extension of Tam's Game Hub"
+        "Fun Faact: CybriaGames was supposed to be an extension of Tam's Game Hub",
+        "does this actually work?",
+        "oh wait NVM it's not that automatic lol"
     ];
 
     const subtitleElement = document.querySelector('.subtitle');
