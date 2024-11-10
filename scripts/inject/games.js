@@ -53,7 +53,7 @@ async function inject() {
                 gcontrols.style.display = 'flex';
                 document.body.style.overflow = 'none';
 
-                gameframe.src = game.source;
+                gameframe.src = '/' + game.source;
                 gameframe.setAttribute('allow', 'autoplay; fullscreen; gamepad; keyboard; clipboard-write; allow-same-origin');
                 gameframe.contentWindow.focus();
 
