@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function scancors(link, proxies) {
-        if (!proxies || proxies.length === 0) {
+        if (proxies.length === 0) {
             link.id = 'fails';
             link.style.display = 'none';
-            console.log('No available CORS proxies for:', link.href);
+            console.error('No available CORS proxies for:', link.href);
             return;
         }
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             link.href = link.href.replace('hhttps', 'https');
         }
         
-        const url = localStorage.getItem('corsproxy') || 'https://cors.timmytamle569.workers.dev/' + link.href;
+        const url = localStorage.getItem('corsproxy') + link.href;
         
         fetch(url, { method: 'GET' })
             .then(response => {
