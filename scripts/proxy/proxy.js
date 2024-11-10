@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function scancors(link, proxies) {
-        if (proxies.length === 0) {
+        if (!proxies || proxies.length === 0) {
             link.id = 'fails';
             link.style.display = 'none';
             console.error('No available CORS proxies for:', link.href);
