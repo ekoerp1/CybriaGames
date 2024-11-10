@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!proxies || proxies.length === 0) {
             link.id = 'fails';
             link.style.display = 'none';
-            console.error('No available CORS proxies for:', link.href);
+            console.log('No available CORS proxies for:', link.href);
             return;
         }
 
