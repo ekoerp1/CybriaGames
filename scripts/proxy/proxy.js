@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             link.href = link.href.replace('hhttps', 'https');
         }
         
-        const url = localStorage.getItem('corsproxy') + link.href;
+        const url = localStorage.getItem('corsproxy') || 'https://cors.timmytamle569.workers.dev/' + link.href;
         
         fetch(url, { method: 'GET' })
             .then(response => {
