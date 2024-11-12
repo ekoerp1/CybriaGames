@@ -85,6 +85,15 @@ async function inject() {
 
     function ifrev(iframe) {
         const ifrdoc = iframe.contentDocument || iframe.contentWindow.document;
+
+        Array.from(ifrdoc.querySelectorAll('script[src], link[rel="stylesheet"][href], img[src]')).forEach(tag => {
+            const linkhrefs = tag.tagName === 'SCRIPT' ? 'src' : 'href';
+            const path = tag.getAttribute(linkhrefs);
+
+            if (path && !path.startsWith('/') && !path.startsWith('http')) {
+                tag.setAttribute(linkhrefs, `${basePath}/${path}`);
+            }
+        });
     
         ifrdoc.addEventListener('keydown', (e) => {
             if (e.altKey && e.key.toLowerCase() === 'm') {
