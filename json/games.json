@@ -515,5 +515,11 @@
     "logo": "/images/games/duck-life-3.png",
     "creator": "Wix Games",
     "source": "/games/duck-life-3"
+  },
+  {
+    "title": "Duck Life 4",
+    "logo": "/images/games/duck-life-4.png",
+    "creator": "Wix Games",
+    "source": "/games/duck-life-4"
   }
 ]
