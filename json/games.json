@@ -509,5 +509,11 @@
     "logo": "/images/games/doodle-jump.png",
     "creator": "Lima Sky",
     "source": "/games/doodle-jump"
+  },
+  {
+    "title": "Duck Life 3: Evolution",
+    "logo": "/images/games/duck-life-3.png",
+    "creator": "Wix Games",
+    "source": "/games/duck-life-3"
   }
 ]
