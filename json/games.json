@@ -521,11 +521,5 @@
     "logo": "/images/games/fancy-pants-adventure.png",
     "creator": "DrNeroCF",
     "source": "/games/fancy-pants-adventure"
-  },
-  {
-    "title": "Geometry Dash Lite",
-    "logo": "/images/games/geometry-dash-lite.png",
-    "creator": "RobTop Games",
-    "source": "/games/geometry-dash-lite"
   }
 ]
