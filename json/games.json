@@ -521,5 +521,11 @@
     "logo": "/images/games/duck-life-4.png",
     "creator": "Wix Games",
     "source": "/games/duck-life-4"
+  },
+  {
+    "title": "Fancy Pants Adventure",
+    "logo": "/images/games/fancy-pants-adventure.png",
+    "creator": "DrNeroCF",
+    "source": "/games/fancy-pants-adventure"
   }
 ]
